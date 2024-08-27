@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "454946915095",
+    "firebase_url": "https://randomfood-677da-default-rtdb.firebaseio.com",
+    "project_id": "randomfood-677da",
+    "storage_bucket": "randomfood-677da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454946915095:android:cb57ec49ee3cc1610cad52",
+        "android_client_info": {
+          "package_name": "com.cookandroid.suwonrandomfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454946915095-r2tonch02v2d9orcfnnh8gko476488m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7ph8PspvFpTR6DfWXL08IkIdiOEQlkh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454946915095-r2tonch02v2d9orcfnnh8gko476488m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

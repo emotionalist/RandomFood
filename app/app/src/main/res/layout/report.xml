@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/arrow_small_left"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/back"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radiogroup">
+        <RadioButton
+            android:id="@+id/addstore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="가게 추가"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textSize="16dp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="오류 제보"
+            android:textSize="16dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:id="@+id/reporterror"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="기타 문의"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textSize="16dp"
+            android:id="@+id/question"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reporter"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:background="@drawable/edit_round"
+        android:gravity="top"
+        android:privateImeOptions="defaultInputmode=korean" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/reporter"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:text="전송"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

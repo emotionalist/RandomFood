@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_container">
+    <!--여기 높이를 wrap_content로 안해주면 리사이클러뷰의 간격이 엄청 넓어진다-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/listimage"
+        android:src="@drawable/sample"
+        android:background="@drawable/corner_shape"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/corner_shape"
+        android:gravity="center_vertical"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/listtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:text="가게이름"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listdescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listtitle"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text="설명"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/liststar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text="별점"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

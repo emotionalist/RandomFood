@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/arrow_small_left" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/questionmark" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:layout_marginBottom="20dp"
+            android:text="가게이름"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:text="대표메뉴"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:id="@+id/starscore"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:drawableTop="@drawable/starpic"
+            android:drawablePadding="2dp"
+            android:text="별점"
+            android:textColor="@color/black"
+            android:background="#00ff0000"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:id="@+id/review"
+            android:drawableTop="@drawable/review"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text="리뷰"
+            android:textColor="@color/black"
+            android:background="#00ff0000"
+            android:textSize="20dp"/>
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:id="@+id/exp"
+            android:drawableTop="@drawable/check"
+            android:background="#00ff0000"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textOff="가본곳"
+            android:textOn="가본곳 취소"
+            android:textSize="20dp"/>
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:id="@+id/wish"
+            android:drawableTop="@drawable/heart"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textOn="찜 취소"
+            android:textOff="찜"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메뉴판"
+        android:textSize="30dp"
+        android:id="@+id/text2"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:layout_below="@+id/text1"
+        android:layout_margin="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menulist"
+        android:layout_below="@+id/text2"/>
+
+</LinearLayout>
